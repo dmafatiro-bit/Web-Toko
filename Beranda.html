@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+
+<body>
+
+
+  <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+    <h3 class="w3-bar-item">Menu</h3>
+    <a href="Beranda.html" class="w3-bar-item w3-button">Beranda</a>
+    <a href="Product.html" class="w3-bar-item w3-button">Product</a>
+    <a href="Profile.html" class="w3-bar-item w3-button">Profile</a>
+  </div>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+
+    .store-tag {
+      display: inline-block;
+      background-color: #ff9f00;
+      color: white;
+      font-weight: 600;
+      padding: 6px 20px;
+      border-radius: 20px;
+      margin: 30px 0 15px;
+      font-size: 16px;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .hero-text h1 {
+      font-size: 34px;
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+
+    .hero-text h1 span {
+      color: #e63946;
+    }
+
+    .hero-text p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 30px;
+      max-width: 500px;
+    }
+
+    .hero-image {
+      flex: 1;
+      min-width: 300px;
+      position: relative;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+      margin: 40px 0;
+    }
+
+    .feature-item {
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    .feature-icon {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 15px;
+      border: 2px solid #e63946;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #e63946;
+      font-size: 24px;
+    }
+
+    .feature-text {
+      font-weight: 500;
+      color: #333;
+    }
+
+
+    .cta-button {
+      display: flex;
+      align-items: center;
+      background: linear-gradient(90deg, #e63946 0%, #e63946 70%, #ff9f00 70%, #ff9f00 100%);
+      color: white;
+      padding: 18px 30px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      margin: 30px 0;
+      max-width: 600px;
+    }
+
+    .cta-icon {
+      font-size: 24px;
+      margin-right: 15px;
+    }
+
+    .cta-text {
+      flex: 1;
+    }
+
+    .cta-arrow {
+      background-color: #ff9f00;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+
+    .quality-box {
+      position: absolute;
+      right: 10px;
+      bottom: 30px;
+      background-color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 260px;
+    }
+
+    .quality-box h3 {
+      color: #e63946;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .quality-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .quality-item::before {
+      content: "✓";
+      color: #2ecc71;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+
+    .documentation {
+      text-align: center;
+      margin: 60px 0;
+    }
+
+    .documentation h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .documentation h2 span {
+      color: #e63946;
+    }
+
+    .documentation p {
+      color: #666;
+      font-size: 15px;
+    }
+
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+
+      .quality-box {
+        position: static;
+        margin-top: 20px;
+        max-width: 100%;
+      }
+
+      .cta-button {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+  </head>
+
+  <body>
+    <div style="margin-left:25%">
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+        }
+
+        body {
+          line-height: 1.6;
+          color: #333;
+          background-color: #fff;
+        }
+
+        .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+
+
+        .store-tag {
+          display: inline-block;
+          background-color: #ff9f00;
+          color: white;
+          font-weight: 600;
+          padding: 6px 20px;
+          border-radius: 20px;
+          margin: 30px 0 15px;
+          font-size: 16px;
+        }
+
+        .hero {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 40px;
+          margin-bottom: 50px;
+        }
+
+        .hero-text {
+          flex: 1;
+          min-width: 300px;
+        }
+
+        .hero-text h1 {
+          font-size: 34px;
+          line-height: 1.3;
+          margin-bottom: 20px;
+        }
+
+        .hero-text h1 span {
+          color: #e63946;
+        }
+
+        .hero-text p {
+          font-size: 16px;
+          color: #555;
+          margin-bottom: 30px;
+          max-width: 500px;
+        }
+
+        .hero-image {
+          flex: 1;
+          min-width: 300px;
+          position: relative;
+        }
+
+        .hero-image img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+        }
+
+
+        .features {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 25px;
+          margin: 40px 0;
+        }
+
+        .feature-item {
+          text-align: center;
+          padding: 20px 10px;
+        }
+
+        .feature-icon {
+          width: 50px;
+          height: 50px;
+          margin: 0 auto 15px;
+          border: 2px solid #e63946;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #e63946;
+          font-size: 24px;
+        }
+
+        .feature-text {
+          font-weight: 500;
+          color: #333;
+        }
+
+
+        .cta-button {
+          display: flex;
+          align-items: center;
+          background: linear-gradient(90deg, #e63946 0%, #e63946 70%, #ff9f00 70%, #ff9f00 100%);
+          color: white;
+          padding: 18px 30px;
+          border-radius: 12px;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 18px;
+          margin: 30px 0;
+          max-width: 600px;
+        }
+
+        .cta-icon {
+          font-size: 24px;
+          margin-right: 15px;
+        }
+
+        .cta-text {
+          flex: 1;
+        }
+
+        .cta-arrow {
+          background-color: #ff9f00;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 20px;
+        }
+
+        .quality-box {
+          position: absolute;
+          right: 10px;
+          bottom: 30px;
+          background-color: white;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          border-radius: 10px;
+          max-width: 260px;
+        }
+
+        .quality-box h3 {
+          color: #e63946;
+          margin-bottom: 15px;
+          font-size: 18px;
+        }
+
+        .quality-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 8px;
+          font-size: 14px;
+        }
+
+        .quality-item::before {
+          content: "✓";
+          color: #2ecc71;
+          font-weight: bold;
+          margin-right: 10px;
+        }
+
+        .documentation {
+          text-align: center;
+          margin: 60px 0;
+        }
+
+        .documentation h2 {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+
+        .documentation h2 span {
+          color: #e63946;
+        }
+
+        .documentation p {
+          color: #666;
+          font-size: 15px;
+        }
+
+
+        @media (max-width: 768px) {
+          .hero {
+            flex-direction: column;
+          }
+
+          .quality-box {
+            position: static;
+            margin-top: 20px;
+            max-width: 100%;
+          }
+
+          .cta-button {
+            flex-wrap: wrap;
+          }
+        }
+      </style>
+      </head>
+
+      <body>
+        <div class="container">
+
+          <div class="store-tag">Toko AC Metro Lampung</div>
+
+
+          <div class="hero">
+            <div class="hero-text">
+              <h1>AC Murah Berkualitas,<br>
+                <span>Selalu Dingin Maksimal,</span><br>
+                Dan Harga Tetap Bersahabat.
+              </h1>
+
+              <p>Toko AC Metro Lampung menyediakan berbagai pilihan AC dari berbagai merek dengan harga bersaing dan
+                garansi resmi. Siap melayani kebutuhan AC untuk rumah, kantor, toko, sekolah, cafe, dan berbagai
+                kebutuhan lainnya.</p>
+
+              <div class="features">
+                <div class="feature-item">
+                  <div class="feature-icon">🛡️</div>
+                  <div class="feature-text">Garansi Resmi Semua Produk</div>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-icon">🏷️</div>
+                  <div class="feature-text">Harga Kompetitif Bersahabat</div>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-icon">👷</div>
+                  <div class="feature-text">Teknisi Expert dan Terlatih</div>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-icon">🚚</div>
+                  <div class="feature-text">Pengiriman Cepat Seluruh Metro</div>
+                </div>
+              </div>
+
+              <a href="#" class="cta-button">
+                <span class="cta-icon">📞</span>
+                <span class="cta-text">
+                  Konsultasi & Order via Whatsapp<br>
+                  <small>Respon cepat, Konsultasi gratis, Penawaran terbaik</small>
+                </span>
+                <span class="cta-arrow">→</span>
+              </a>
+            </div>
+
+          </div>
+
+      </body>
+
+</html>

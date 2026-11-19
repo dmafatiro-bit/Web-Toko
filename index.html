@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: white;
+    color: #292929;
+  }
+
+
+  .sidebar {
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    background: #f1f1f1;
+    padding: 26px 28px;
+  }
+
+  .sidebar h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 28px;
+  }
+
+  .sidebar a {
+    display: block;
+    padding: 13px 0;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+  }
+
+  .sidebar a:hover {
+    color: #ed3345;
+  }
+
+
+  main {
+    margin-left: 25%;
+    padding: 30px 24px;
+    min-height: 100vh;
+  }
+
+  .content {
+    max-width: 1260px;
+    margin: auto;
+  }
+
+
+  .tag {
+    display: inline-block;
+    background: #ff9900;
+    color: white;
+    padding: 12px 23px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+
+  .hero {
+    padding-top: 32px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    line-height: 1.27;
+    font-weight: normal;
+  }
+
+  .hero h1 span {
+    color: #ed3345;
+  }
+
+  .intro {
+    max-width: 580px;
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 1.65;
+    color: #5c5c5c;
+  }
+
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin: 68px 0 70px;
+    text-align: center;
+  }
+
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+  }
+
+  .feature-icon {
+    width: 58px;
+    height: 58px;
+    border: 2px solid #ff3345;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+
+  .feature p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+
+  .whatsapp {
+    display: flex;
+    width: min(100%, 690px);
+    min-height: 108px;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #ed3345;
+    color: white;
+    text-decoration: none;
+  }
+
+  .wa-copy {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 20px 28px;
+  }
+
+  .wa-phone {
+    font-size: 28px;
+  }
+
+  .wa-copy strong {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .wa-copy span:last-child {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .wa-arrow {
+    width: 30%;
+    background: #ff9900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+  }
+
+  .whatsapp:hover {
+    opacity: 0.9;
+  }
+
+
+  @media (max-width: 760px) {
+    .sidebar {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      height: auto;
+      padding: 14px 18px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    .sidebar nav {
+      display: flex;
+      gap: 22px;
+    }
+
+    .sidebar a {
+      font-size: 14px;
+    }
+
+    main {
+      margin-left: 0;
+      padding: 28px 20px;
+    }
+
+    .hero h1 {
+      font-size: 30px;
+    }
+
+    .intro {
+      font-size: 16px;
+    }
+
+    .features {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 34px 16px;
+      margin: 48px 0;
+    }
+
+    .feature p {
+      font-size: 14px;
+    }
+
+    .wa-copy {
+      padding: 16px;
+      gap: 12px;
+    }
+
+    .wa-copy strong {
+      font-size: 16px;
+    }
+
+    .wa-copy span:last-child {
+      font-size: 13px;
+    }
+
+    .wa-arrow {
+      width: 20%;
+    }
+  }
+</style>
+
+<body>
+
+
+  <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+    <h3 class="w3-bar-item">Menu</h3>
+    <a href="Beranda.html" class="w3-bar-item w3-button">Beranda</a>
+    <a href="Product.html" class="w3-bar-item w3-button">Product</a>
+    <a href="Profile.html" class="w3-bar-item w3-button">Profile</a>
+  </div>
+
+  <main id="beranda">
+    <div class="content">
+
+      <div class="tag">
+        Toko AC Metro Lampung
+      </div>
+
+
+      <section class="hero">
+
+        <h1>
+          AC Murah Berkualitas,<br>
+          <span>Selalu Dingin Maksimal,</span><br>
+          Dan Harga Tetap Bersahabat.
+        </h1>
+
+        <p class="intro">
+          Toko AC Metro Lampung menyediakan berbagai pilihan AC
+          dari berbagai merek dengan harga bersaing dan garansi resmi.
+          Siap melayani kebutuhan AC untuk rumah, kantor, toko,
+          sekolah, cafe, dan berbagai kebutuhan lainnya.
+        </p>
+
+      </section>
+
+
+      <section class="features" id="produk">
+
+        <div class="feature">
+          <div class="feature-icon">🛡️</div>
+          <p>Garansi Resmi Semua Produk</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">🏷️</div>
+          <p>Harga Kompetitif Bersahabat</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">👷</div>
+          <p>Teknisi Expert dan Terlatih</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">🚚</div>
+          <p>Pengiriman Cepat Seluruh Metro</p>
+        </div>
+
+      </section>
+
+
+      <a class="whatsapp" href="https://wa.me/6281234567890" target="_blank">
+
+        <div class="wa-copy">
+
+          <span class="wa-phone">📞</span>
+
+          <div>
+            <strong>
+              Konsultasi &amp; Order via Whatsapp
+            </strong>
+
+            <span>
+              Respon cepat, Konsultasi gratis,
+              Penawaran terbaik
+            </span>
+          </div>
+
+        </div>
+
+        <div class="wa-arrow">
+          →
+        </div>
+
+      </a>
+
+    </div>
+  </main>
+
+  </div>
+
+</body>
+
+</html>

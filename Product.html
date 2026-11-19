@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  }
+
+  body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+
+  .page-header {
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .store-tag {
+    display: inline-block;
+    background-color: #ff9f00;
+    color: white;
+    font-weight: 600;
+    padding: 6px 20px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .page-header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .page-header h1 span {
+    color: #e63946;
+  }
+
+  .page-header p {
+    color: #666;
+    font-size: 16px;
+  }
+
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .product-card {
+    border: 1px solid #f0f0f0;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .product-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: #f8f9fa;
+  }
+
+  .product-body {
+    padding: 20px;
+  }
+
+  .product-brand {
+    display: inline-block;
+    background-color: #e63946;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+
+  .product-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .product-desc {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+
+  .product-specs {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+
+  .product-specs p {
+    margin-bottom: 4px;
+  }
+
+  .product-specs span {
+    font-weight: 600;
+    color: #333;
+  }
+
+  .product-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #e63946;
+    margin-bottom: 15px;
+  }
+
+  .product-price small {
+    font-size: 12px;
+    color: #888;
+    font-weight: 400;
+  }
+
+  .btn-wa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-wa:hover {
+    background-color: #1fb858;
+  }
+
+  .btn-wa span {
+    margin-left: 8px;
+  }
+
+
+  @media (max-width: 768px) {
+    .page-header h1 {
+      font-size: 24px;
+    }
+
+    .product-grid {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<body>
+
+
+  <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+    <h3 class="w3-bar-item">Menu</h3>
+    <a href="Beranda.html" class="w3-bar-item w3-button">Beranda</a>
+    <a href="Product.html" class="w3-bar-item w3-button">Product</a>
+    <a href="Profile.html" class="w3-bar-item w3-button">Profile</a>
+  </div>
+
+
+  <div style="margin-left:25%">
+    <div class="container">
+
+      <div class="page-header">
+        <div class="store-tag">Toko AC Metro Lampung</div>
+        <h1>Daftar Produk <span>AC Berkualitas</span></h1>
+        <p>Pilihan terbaik untuk rumah & kantor — Garansi Resmi, Harga Bersahabat</p>
+      </div>
+
+
+      <div class="product-grid">
+
+        <div class="product-card">
+          <img src="https://www.hascor.org/4044-large_default/split-air-conditioner-9000-btu-brand-sharp-lg.jpg"
+            alt="AC Sharp 1 PK" class="product-img">
+          <div class="product-body">
+            <span class="product-brand">SHARP</span>
+            <h3 class="product-name">AC Sharp AH-A9ZCY 1 PK</h3>
+            <p class="product-desc">AC standar hemat listrik untuk ruangan 10–15 m²</p>
+            <div class="product-specs">
+              <p>Kapasitas: <span>1 PK</span></p>
+              <p>Daya: <span>840 Watt</span></p>
+              <p>Fitur: <span>Hemat Listrik, Anti Karat</span></p>
+            </div>
+            <p class="product-price">Rp 3.250.000 <small>/unit</small></p>
+            <a href="https://wa.me/6281234567890?text=Halo%20Toko%20AC%20Metro%2C%20saya%20ingin%20pesan%20AC%20Sharp%201%20PK"
+              class="btn-wa" target="_blank">
+              <span>Pesan via WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="product-card">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.9nWjRe-WPSejM-RRSuu84wAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="AC Panasonic 1.5 PK" class="product-img">
+          <div class="product-body">
+            <span class="product-brand">PANASONIC</span>
+            <h3 class="product-name">AC Panasonic CS-YWK12 1.5 PK</h3>
+            <p class="product-desc">Pendingin cepat & tahan lama, cocok ruang keluarga</p>
+            <div class="product-specs">
+              <p>Kapasitas: <span>1.5 PK</span></p>
+              <p>Daya: <span>1.150 Watt</span></p>
+              <p>Fitur: <span>Mode Dingin Cepat, Filter Anti Debu</span></p>
+            </div>
+            <p class="product-price">Rp 4.650.000 <small>/unit</small></p>
+            <a href="https://wa.me/6281234567890?text=Halo%20Toko%20AC%20Metro%2C%20saya%20ingin%20pesan%20AC%20Panasonic%201.5%20PK"
+              class="btn-wa" target="_blank">
+              <span>Pesan via WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="product-card">
+          <img
+            src="https://th.bing.com/th/id/OIP.tW5HjtUioK9DvFQHqB1v5wHaHa?w=168&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+            alt="AC Daikin Inverter 1 PK" class="product-img">
+          <div class="product-body">
+            <span class="product-brand">DAIKIN</span>
+            <h3 class="product-name">AC Daikin FTKF25 Inverter 1 PK</h3>
+            <p class="product-desc">Teknologi Inverter — sangat hemat listrik & tenang</p>
+            <div class="product-specs">
+              <p>Kapasitas: <span>1 PK Inverter</span></p>
+              <p>Daya: <span>230–780 Watt</span></p>
+              <p>Fitur: <span>Inverter, Suara Rendah, Anti Bakteri</span></p>
+            </div>
+            <p class="product-price">Rp 5.900.000 <small>/unit</small></p>
+            <a href="https://wa.me/6281234567890?text=Halo%20Toko%20AC%20Metro%2C%20saya%20ingin%20pesan%20AC%20Daikin%20Inverter"
+              class="btn-wa" target="_blank">
+              <span>Pesan via WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="product-card">
+          <img
+            src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/108/MTA-152958573/br-m036969-01905_ac-lg-2-pk-dual-inverter-t18ev5-new-eco-r32-dual-cool_full02-904e5bc8.jpg"
+            alt="AC LG 2 PK" class="product-img">
+          <div class="product-body">
+            <span class="product-brand">LG</span>
+            <h3 class="product-name">AC LG P24CP 2 PK</h3>
+            <p class="product-desc">Kekuatan besar untuk ruangan luas & kantor</p>
+            <div class="product-specs">
+              <p>Kapasitas: <span>2 PK</span></p>
+              <p>Daya: <span>1.680 Watt</span></p>
+              <p>Fitur: <span>Auto Cleaning, Smart Control</span></p>
+            </div>
+            <p class="product-price">Rp 6.800.000 <small>/unit</small></p>
+            <a href="https://wa.me/6281234567890?text=Halo%20Toko%20AC%20Metro%2C%20saya%20ingin%20pesan%20AC%20LG%202%20PK"
+              class="btn-wa" target="_blank">
+              <span>Pesan via WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="product-card">
+          <img
+            src="https://th.bing.com/th/id/OIP.djRfLybDhTK-9PgcvYnUkAHaHa?w=185&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+            alt="AC Gree 0.5 PK" class="product-img">
+          <div class="product-body">
+            <span class="product-brand">GREE</span>
+            <h3 class="product-name">AC Gree GWH09 0.5 PK</h3>
+            <p class="product-desc">Kecil, murah, cocok kamar tidur & ruang sempit</p>
+            <div class="product-specs">
+              <p>Kapasitas: <span>0.5 PK</span></p>
+              <p>Daya: <span>650 Watt</span></p>
+              <p>Fitur: <span>Ringan, Mudah Pasang, Hemat</span></p>
+            </div>
+            <p class="product-price">Rp 2.450.000 <small>/unit</small></p>
+            <a href="https://wa.me/6281234567890?text=Halo%20Toko%20AC%20Metro%2C%20saya%20ingin%20pesan%20AC%20Gree%200.5%20PK"
+              class="btn-wa" target="_blank">
+              <span>Pesan via WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="product-card">
+          <img src="https://th.bing.com/th/id/OIP.aWj4YO7Rc135kbX_3RksqQHaHa?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="AC Samsung WindFree" class="product-img">
+          <div class="product-body">
+            <span class="product-brand">SAMSUNG</span>
+            <h3 class="product-name">AC Samsung WindFree 1 PK</h3>
+            <p class="product-desc">Angin lembut & merata — tidak kaku, tetap sejuk</p>
+            <div class="product-specs">
+              <p>Kapasitas: <span>1 PK Inverter</span></p>
+              <p>Daya: <span>300–800 Watt</span></p>
+              <p>Fitur: <span>WindFree™, Pembersih Otomatis</span></p>
+            </div>
+            <p class="product-price">Rp 7.250.000 <small>/unit</small></p>
+            <a href="https://wa.me/6281234567890?text=Halo%20Toko%20AC%20Metro%2C%20saya%20ingin%20pesan%20AC%20Samsung%20WindFree"
+              class="btn-wa" target="_blank">
+              <span>Pesan via WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
